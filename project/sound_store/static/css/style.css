@@ -1,0 +1,443 @@
+body {
+    background-color: #262626;
+}
+
+.ui.container {
+    width: 100%;
+    height: 100%;
+}
+
+.window-manager {
+    height: 100%;
+}
+
+/* MENUBAR */
+/* ------------------------------------------- */
+
+.menubar {
+    height: 60px;
+    background-color: teal;
+}
+
+.ui.horizontal.list.menu-bar {
+    width: 90%;
+    height: 55px;
+    margin: 10px 10px 0 10px;
+}
+
+.ui.button.back {
+    float: left;
+    width: auto;
+    height: auto;
+}
+
+.button.export {
+    float: left;
+    margin: 0 0 0 33.1%;
+}
+
+.player-view {
+    width: auto;
+    float: left;
+    margin: 0 0 0 3%;
+}
+
+.button.record {
+    float: left;
+    margin: 0 0 0 3%;
+}
+
+.button.clear {
+    float: left;
+    margin: 0 0 0 0.2%;
+}
+
+.user-info-bar {
+    width: 15%;
+    float: right;
+}
+
+.user-info-bar .ui.button {
+    width: auto;
+    float: right;
+    font-size: 15px;
+}
+
+.user-info-bar .username {
+    float: left;
+    color: white;
+    margin: 3% 1% 0;
+    font-size: 20px;
+}
+
+.content {
+    padding-top: 2%;
+}
+
+/* MODAL WINDOW */
+/* ------------------------------------------- */
+
+.ui.modal.message {
+    width: 400px;
+    height: auto;
+    padding: 1%;
+}
+
+.ui.modal.message p {
+    margin: 0 auto;
+    font-size: 15px;
+    display: inline-block;
+}
+
+.ui.modal.message .button-group {
+    margin: 0 auto;
+    display: inline-block;
+}
+
+.ui.modal.user-registration {
+    width: 350px;
+    height: 230px;
+}
+
+.buttons-registration {
+    display: block;
+    margin: 0 auto;
+    width: 100%;
+    height: 100%;
+}
+
+.ui.modal.user-registration .button {
+    width: auto;
+    height: 50px;
+    display: block;
+    font-size: 15px;
+    margin: 5% auto;
+}
+
+/* PROJECT LIST VIEW */
+/* ------------------------------------------- */
+
+.project-list {
+    margin: 1% 10%;
+}
+
+.project-list h1 {
+    color: white;
+    margin: 2% 0 0 0;
+}
+
+.project-list .column .name {
+    float: left;
+    color: white;
+    font-size: 22px;
+    vertical-align: middle;
+    width: 60%;
+}
+
+.project-list .ui.grid {
+    margin: 3%;
+}
+
+.project-list .circular.ui.icon.button.delete {
+    margin: 0 10% 0;
+    float: right;
+}
+
+.project-list .circular.ui.icon.button.delete i {
+    display: inline-block;
+    margin: 0 auto;
+    width: auto;
+}
+
+.circular.ui.icon.button.add-project {
+    display: block;
+    margin: 3% auto;
+    width: 40px;
+    height: 40px;
+}
+
+.circular.ui.icon.button.add-project i {
+    display: block;
+    margin: 0 auto;
+    width: auto;
+    height: auto;
+}
+
+/* TRACK LIST VIEW */
+/* ------------------------------------------- */
+
+.track-list-view {
+    width: 80%;
+    height: auto;
+    margin: 1% 10%;
+}
+
+.track-list-view .project-name-editor {
+    width: auto;
+}
+
+.track-list-view .project-name-editor input[type="text"], textarea {
+    width: 30%;
+    color: white;
+    background-color: #2f2f2f;
+}
+
+.track-list-view .project-name {
+    width: auto;
+    color: white;
+    margin: 1% 0 2% 0;
+    font-size: 25px;
+    text-align: center;
+    display: inline-block;
+}
+
+.track-list {
+    height: auto;
+    margin: 0 10% 10% 15%;
+}
+
+.track-list div[class^='track-']{
+    margin: 0 0 2% 0;
+    height: 60px;
+}
+
+.track-list .circular.ui.icon.button.delete {
+    float: right;
+    width: 30px;
+    height: 30px;
+}
+
+.circular.ui.icon.button.add-track {
+    width: 40px;
+    height: 40px;
+    margin: 3% 10% 0 10%;
+    display: inline-block;
+}
+
+.track-data-view {
+    width: 90%;
+    float: left;
+    height: 60px;
+    margin: 0 auto;
+    display: inline-block;
+    background-color: #565e62;
+}
+
+.track-data-view, .instrument-name {
+    color: white;
+    font-size: 20px;
+    margin: 0 auto;
+}
+
+/* TRACK VIEW */
+/* ------------------------------------------- */
+
+.track-view {
+    margin: 3% auto;
+    width: 95%;
+}
+
+.instrument-view {
+
+}
+
+.track-view .tools .column.instrument{
+
+}
+
+.wave-form {
+    width: 100%;
+    height: 120px;
+    margin: 0;
+    background-color: #565e62;
+}
+
+/* piano view */
+
+.piano {
+    margin: 5% 0;
+    height: 220px;
+    float: left;
+}
+
+.keys {
+    width: 100%;
+    position: relative;
+    margin: 0;
+    -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+    -moz-user-select: none; /* Firefox */
+    -ms-user-select: none; /* Internet Explorer/Edge */
+    user-select: none; /* Non-prefixed version, currently supported by Chrome and Opera */
+}
+
+.keys .key {
+    position: absolute;
+    border: 1px solid black;
+    border-radius: 0px 0px 5px 5px;
+    box-shadow: 0px 5px 1px rgba(32,32,32,0.2);
+    background-color: #ffffff;
+    z-index: 0;
+    width: 40px;
+    height: 200px;
+}
+/*
+.key.white {
+    background-color: #ffffff;
+    z-index: 0;
+    width: 40px;
+    height: 200px;
+}
+
+.key.black {
+    background-color: rgb(32,32,32);
+    color: #ffffff;
+    z-index: 1;
+    width: 30px;
+    height: 120px;
+}
+*/
+.key-content{
+    position: absolute;
+    bottom: 5px;
+    left: 0px;
+    right: 0px;
+}
+
+.key-content label {
+    text-align: center;
+}
+
+.key-content .note {
+    margin-bottom: 40px;
+}
+
+.key-content .keyboard {
+    margin-top: 10px;
+}
+
+.piano .octaves {
+    width: auto;
+    margin: 30% 0;
+    position: absolute;
+}
+
+.piano .octave-label {
+    float: left;
+    color: white;
+    margin: 1% 0;
+    font-size: 20px;
+}
+
+.piano .octave-range {
+    float: right;
+    width: 40%;
+}
+
+.piano .octave-range .ui.dropdown {
+    width: 10%;
+}
+
+/* drum view */
+
+.grid.drum {
+    width: auto;
+    margin: 5% auto;
+}
+
+.instrument-view .ui.grid.drum .column {
+    width: 48%;
+    margin: 1%;
+    background-color: #565e62;
+}
+
+.grid.drum img.ui.image {
+    margin: 0 auto;
+}
+
+.grid.drum .column .keys {
+    width: 100%;
+    margin: 0 0 5% 0;
+    display: inline-block;
+}
+
+.grid.drum .column .keys div {
+    width: 45%;
+    padding: 2%;
+    float: left;
+    font-size: 20px;
+    margin: 0 2.5% 0 2.5%;
+    background-color: #656e73;
+}
+
+/* tool view - tab */
+
+/*.track-view .tabular.menu {
+    background-color: #f8f8f8;
+}*/
+
+.ui.attached.tabular.menu .item.active{
+    background-color: white;
+}
+
+.ui.attached.tabular.menu .item{
+    background-color: #ebebeb;
+}
+
+.track-view .ui.grid.setting .column{
+    margin: 1% 0;
+}
+
+.track-view .ui.grid.setting .column-range {
+    margin: 1% auto;
+    display: inline-block;
+}
+
+.track-view .ui.grid.setting .column-range div .ui.label {
+    width: 50px;
+    background-color: white;
+}
+
+.track-view .ui.grid.filter {
+    margin: 1% 0;
+}
+
+.track-view .ui.grid.filter .column div[class^="item-"] {
+    margin: 0 0 5% 0;
+}
+
+.track-view .ui.grid.filter .column div[class^="filter-setting-"] {
+    padding: 2%;
+    margin: 2% 0;
+    background-color: #f8f8f8;
+}
+
+input {
+    width: 300px;
+    min-width: 100px;
+}
+
+
+/*
+.circle-drag {
+    border-radius: 50%;
+}
+
+.draggable {
+    width: 25px;
+    height: 25px;
+    background: #F90;
+}
+.draggable.is-pointer-down {
+    background: #09F;
+}
+.draggable.is-dragging {
+    opacity: 0.7;
+}
+
+.coord-map {
+    width: 1500px;
+    height: 150px;
+    background-color: grey;
+}
+*/
