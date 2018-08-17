@@ -4,7 +4,9 @@
   "license": "MIT",
   "main": "src/index.js",
   "scripts": {
-    "build": "./node_modules/.bin/webpack --config webpack.config.js"
+    "build": "./node_modules/.bin/webpack --config webpack.config.js",
+    "scss": "node-sass ./css/style.scss ./css/styles.css",
+    "watch-css": "node-sass -w ./css/style.scss -o ./css/style.css"
   },
   "devDependencies": {
     "webpack": "^2.2.1",
@@ -14,8 +16,10 @@
     "audio-buffer-utils": "^5.1.1",
     "audiobuffer-to-wav": "^1.0.0",
     "merge-audio-buffers": "^1.0.0",
+    "node-sass": "^4.9.2",
     "observer": "https://github.com/kurzgame/Observer/tarball/master",
     "recorder-js": "^1.0.7",
+    "sass": "^1.10.1",
     "semantic-ui": "^2.3.0"
   }
 }
